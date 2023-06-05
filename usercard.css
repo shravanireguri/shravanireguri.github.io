@@ -15,3 +15,7 @@
 .cardbody{
     padding: 2px 16px;
 }
+
+.cardbody-desig{
+    font-style: italic;
+}
