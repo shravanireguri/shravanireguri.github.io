@@ -25,4 +25,4 @@ let flipData = function(){
     document.getElementById("old-img").src=displayObj.imgurl;
     document.getElementById("name").innerHTML = displayObj.name;
     document.getElementById("desc").innerHTML = displayObj.Description;
-}
+};
