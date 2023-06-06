@@ -9,14 +9,15 @@
 </head>
 <body>
     <div class="container">
-        <h2>User Card1</h2>
+        <h2>User Card2</h2>
         <div class="card">
-            <img class = "cardimg" src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/319900/319946.png">
+            <img class = "cardimg" id = "old-img" src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/319900/319946.png">
             <div class = "cardbody">
-                <h4>Mahendra Singh Dhoni</h4>
-                <p class="cardbody-desig">Captain of Indian cricket team</p>
+                <h4 id="name">Mahendra Singh Dhoni</h4>
+                <p id = "desc" class="cardbody-desig">Captain of Indian cricket team</p>
             </div>
         </div>
+        <button onclick="flipData()">click here</button>
     </div>
     <script src="usercard2.js"></script>
 </body>
