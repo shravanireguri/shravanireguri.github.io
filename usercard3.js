@@ -5,7 +5,11 @@ let dhonioldinfo = {
 };
 
 
-let displayObj;
+let displayObj = {
+    name: "",
+    imgurl: "",
+    Description: ""
+};
 
 let getRandomUser = function(){
     fetch("https://randomuser.me/api")
