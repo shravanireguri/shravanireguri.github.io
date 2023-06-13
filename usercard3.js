@@ -4,24 +4,13 @@ let dhonioldinfo = {
     Description: "Captain of Indian team"
 };
 
-let dhoniyounginfo = {
-    imgurl: "https://stat4.bollywoodhungama.in/wp-content/uploads/2016/10/M.S.-Dhoni-%E2%80%93-The-Untold-Story-7.jpg",
-    name: "MS Dhoni",
-    Description: "Ticket Collector"
-};
 
-let isdhoniold = true;
 let displayObj;
 
-let flipData = function(){
-    if(isdhoniold == true){
-        displayObj = dhoniyounginfo;
-        isdhoniold = false;
-    }
-    else{
-        displayObj = dhonioldinfo;
-        isdhoniold = true;
-    }
+let getRandomUser = function(){
+    fetch("https://randomuser.me/api")
+    .then(response => response.json())
+    .then(data=>console.log(data))
     document.getElementById("old-img").src=displayObj.imgurl;
     document.getElementById("name").innerHTML = displayObj.name;
     document.getElementById("desc").innerHTML = displayObj.Description;
